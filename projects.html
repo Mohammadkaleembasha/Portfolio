@@ -6,77 +6,83 @@
     <title>Projects</title>
     <style>
         body {
-            background-image: url('C:/Users/kalee/Downloads/top-view-work-desk-with-drawing-pad-glasses-with-copy-space.jpg'); 
-           
-      
+            background-image: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg');
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Consistent font */
+            color: #fff; /* Default text color */
         }
-        .portfolio-item{
-            margin-left:0%;
-            margin-right: 25%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 17px;
-            font-weight: bold;
-            border-radius: 20px;
+        .portfolio-item {
+            margin: 20px auto; /* Center items with auto margins */
+            width: 200px; 
+            height: 200px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            overflow: hidden; 
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 20px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
         }
-        h3{
-            color: rgb(255, 255, 255);
+        .portfolio-item:hover {
+            transform: scale(1.05); 
         }
-        h2{
-            color: rgb(255, 255, 255);
-        }
-        p{
-            color: rgb(255, 255, 255);
-        }
-        img{
-            border-radius: 10px;
-            margin-left: 16%;
-            margin-right: 16;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
-            border: 2px solid rgb(255, 255, 255);
-            width: 50%;
-            height: 50%;
-            background-color: rgba(255, 247, 247, 0.359);
-
+        h2, h3, p {
+            color: #fff; /* Consistent color for headings and paragraphs */
         }
         footer {
+            position: fixed; 
+            left: 0;
+            bottom: 0; 
+            width: 100%; 
             text-align: center;
-            margin-top: 4rem; /* Increased margin-top to move footer down */
-            color: #696969;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-
-            margin-left: 0%;
-            margin-right: 25%;
             padding: 10px;
-        
-            width: 100%;
             background-color: #181818;
-            color: #ffffff;
-          
+            color: #fff; 
         }
-       
+        nav {
+            text-align: center; 
+            margin: 20px 0; 
+        }
+        nav ul {
+            list-style: none; 
+            padding: 10px; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px; 
+            display: inline-block; /* Center nav items */
+        }
+        nav ul li {
+            display: inline; 
+            margin: 0 10px; 
+        }
+        nav ul li a {
+            text-decoration: none; 
+            font-size: 18px; 
+            color: #fff; 
+            padding: 8px 16px; 
+            border-radius: 5px; 
+            transition: background-color 0.2s ease-in-out; 
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3); 
+            transform: scale(1.05); 
+        }
     </style>
 </head>
-<body style="background-image: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg');"
-bgcolor="black">
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
     <section>
         <div class="container">
-            <div class="portfolio-item">
-                <h2>PPE DETECTION :</h2>
-                <h2>Description:</h3>
-                <p>Personal Protective Equipment (PPE) detection is a process that involves 
-                    identifying whether individuals are wearing the required safety gear in 
-                    specific environments, particularly in workplaces like construction sites, factories, laboratories, 
-                    and healthcare settings. PPE includes items such as helmets, safety vests, gloves, goggles, 
-                    face masks, and ear protection</p>
-                    <h2>Technologies Used:</h3><p> HTML, CSS, JavaScript</p>
-                
-                <img src="https://visionify.ai/wp-content/uploads/2023/05/PPE.png.webp" alt="PPE Detection Project Image" style="width:100%; height:auto;">
-            </div>
+            <a href="project1.html" class="portfolio-item">
+                <h2>PPE DETECTION</h2>
+            </a>
         </div>
     </section>
     <footer>

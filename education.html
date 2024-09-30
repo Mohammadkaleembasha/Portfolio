@@ -6,58 +6,77 @@
     <title>Education Details</title>
     <style>
         body {
-           
             background-image: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg');
-           
+            margin: 0; /* Added to remove default body margin */
+            font-family: Arial, sans-serif; /* Added for better typography */
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-left: 0%;
-            margin-right: 0%;
-            margin-top: 25px;
-            margin-bottom: 21px;
-            border-radius: 1px;
-            background-color: rgba(0, 0, 0, 0.549);
+            margin: 25px auto; /* Centered table with auto margins */
             max-width: 50%;
-           
-           
+            background-color: rgba(0, 0, 0, 0.549);
         }
         th, td {
-            border: 2px solid rgb(0, 0, 0); /* Set table border color to white */
             padding: 8px;
             text-align: left;
-            color: rgb(255, 255, 255); /* Set table text color to white */
+            color: #fff; /* Simplified color declaration */
         }
         th {
-            background-color: #000000;
-            opacity: 0.7; /* Set table header background color to dark gray */
+            background-color: rgba(0, 0, 0, 0.7);
         }
-        h2{
-            color: rgb(244, 242, 242);
-
+        h2 {
+            color: #f4f2f2;
+            transition: color 0.3s ease;
+        }
+        h2:hover {
+            color: #ff0; /* Simplified color declaration */
         }
         footer {
-            text-align: center;
-            margin-top: 4rem; /* Increased margin-top to move footer down */
-            color: #696969;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-
-            margin-left: 0%;
-            margin-right: 25%;
-            padding: 10px;
-        
+            position: fixed;
+            left: 0;
+            bottom: 0;
             width: 100%;
+            text-align: center;
+            color: #fff;
             background-color: #181818;
-            color: #ffffff;
-          
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px 35px; /* Combined margins */
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <!-- ... existing code ... -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
     <section id="education">
         <h2>Education :</h2>
@@ -69,7 +88,7 @@
             </tr>
             <tr>
                 <td>B.Tech in Computer Science</td>
-                <td>Vignan's lara institute of technology and sciences</td>
+                <td>Vignan's Lara Institute of Technology and Sciences</td>
                 <td>2021-2025</td>
             </tr>
             <tr>

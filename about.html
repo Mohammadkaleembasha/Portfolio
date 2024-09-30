@@ -7,84 +7,96 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            
             background-image: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg');
-            
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Consistent font */
+            color: #fff; /* Default text color */
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-right: 50;
-            margin-left: 50;
+            margin: 0 50px; // Combined margin-left and margin-right
             max-width: 28%;
+            color: #ffffff;
         }
         th, td {
-            border: 2px solid rgb(0, 0, 0);
+            border: 0;
             padding: 8px;
             text-align: left;
             background-color: rgba(0, 0, 0, 0.641);
             max-width: 75%;
-            margin-left: 40;
-            
         }
         th {
             background-color: #00000097;
         }
-        h2{
+        h2, li {
             color: rgb(255, 255, 255);
         }
-        li{
-            color: rgb(255, 255, 255);
-        }
-        .certificates{
-            color: rgb(255, 255, 255);
-            margin-left: 0%;
-            margin-right: 25%;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        .certificates, .internships {
+            margin: 20px 25% 20px 0; // Combined margins
             font-size: 16px;
             font-weight: bold;
             border-radius: 20px;
             background-color: rgba(209, 201, 201, 0);
-            padding: 0px;
-            
-        }
-        .internships{
-            color: rgb(0, 0, 0);
-            margin-left: 0%;
-            margin-right: 25%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 20px;
-            background-color: rgba(209, 201, 201, 0);
-            padding: 0px;
+            padding: 0;
         }
         footer {
             text-align: center;
-            margin-top: 4rem; /* Increased margin-top to move footer down */
+            margin-top: 4rem;
             color: #696969;
             font-size: 1rem;
             font-weight: bold;
-            text-decoration: none;
-
-            margin-left: 0%;
-            margin-right: 25%;
             padding: 10px;
-        
             width: 100%;
             background-color: #181818;
-            color: #ffffff;
-          
         }
-        .personal-details{
-           color: #ffffff;
-            margin-right: 50;
+        .personal-details {
+            color: #ffffff;
+            margin-right: 50px; // Added unit for consistency
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px 35px; // Combined margins
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.1s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3); 
+            transform: scale(1.05);
+        }
+        .internships h2, .certificates li, .internships li {
+            transition: color 0.3s ease; // Merged transition effects
+        }
+        .certificates li:hover, .internships li:hover {
+            color: rgb(4, 189, 161); // Merged hover effects
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="about.html">About</a></li>
+       
+        </ul>
+    </nav>
     <div class="personal-details">
         <table>
             <tr>

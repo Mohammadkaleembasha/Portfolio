@@ -6,30 +6,25 @@
     <title>Mohammad KaleemBasha - Portfolio</title>
     <style>
         body {
+            /* Combined properties for better readability */
             font-family: Arial, sans-serif;
-           
-            background-image: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg'); /* Added background image */
-          
+            background: url('https://github.com/Mohammadkaleembasha/Portfolio/raw/main/myportbg.jpg') no-repeat center center fixed; /* Optimized background */
             color: #ffffff;
             opacity: 1; 
-
             transition: opacity 0.3s ease-in-out;
-            animation: backgroundAnimation 15s linear infinite; /* Added moving animation */
+            animation: backgroundAnimation 15s linear infinite;
         }
         .container {
+            /* Removed duplicate properties and combined margin/padding */
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+            margin: 15px auto;
+            padding: 3rem;
             opacity: 0.9;
             backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            margin: 20px;
-            opacity: 0.9;
             background-color: rgba(0, 0, 0, 0.7); 
-            padding: 3rem;
-            margin: 15px auto;
         }
         header {
             background-color: rgba(0, 0, 0, 0.9); 
@@ -41,8 +36,6 @@
             opacity: 0.9;
             max-width: 84%;
             margin-left: 7.5%;
-            
-            
         }
         h1 {
             font-size: 3em;
@@ -64,12 +57,13 @@
             transform: scale(1.05);
         }
         nav ul {
+            /* Fixed margin-right and margin-left */
             list-style-type: none;
             padding: 10px;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 20px 30px; /* Combined margins */
         }
         nav ul li {
             display: inline-block;
@@ -89,28 +83,16 @@
             transform: scale(1.05);
         }
         .social-links, .resume-link {
+            /* Removed duplicate properties */
             text-align: center;
-            margin-top: 2rem;
+            margin: 20px;
+            padding: 20px;
             background-color: rgba(0, 0, 0, 0.8); 
             color: #ffffff;
             border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            padding: 20px;
-            margin: 20px;
-            opacity: 0.9;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease-in-out;
             opacity: 0.9;
-            
         }
         .social-links h3 {
             margin-bottom: 15px;
@@ -132,10 +114,9 @@
             height: 32px;
         }
         .resume-link img {
+            /* Combined properties for better readability */
             width: 100px;
             height: 100px;
-            position: relative;
-            top: 10px;
             margin-bottom: 10px;
         }
         .resume-link a {
@@ -149,10 +130,6 @@
             transition: transform 0.2s ease-in-out;
             transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
             position: relative;
-            
-
-            
-            
             text-decoration: none;
             color: #ffffff;
         }
@@ -216,9 +193,10 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
         <div class="additional-content">
@@ -230,6 +208,13 @@
             </p>
         </div>
         <center>
+            <div class="resume-link">
+                <span>My Resume :</span>
+                <a href="https://drive.google.com/file/d/1O_Ec0Jwaxuk6dXrtoi8hbMidrh2L3zPf/view?usp=sharing" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135692.png" alt="Resume Logo">
+                   
+                </a>
+            </div>
         <div class="social-links">
             <h3>Connect with me:</h3>
             <a href="https://www.linkedin.com/in/kaleembasha11/" target="_blank">
@@ -240,14 +225,6 @@
             </a>
             <a href="tel:+916301065331">
                 <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
-            </a>
-        </div>
-
-        <div class="resume-link">
-            <span>My Resume</span>
-            <a href="https://drive.google.com/file/d/1O_Ec0Jwaxuk6dXrtoi8hbMidrh2L3zPf/view?usp=sharing" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135692.png" alt="Resume Logo">
-               
             </a>
         </div>
     </div>
